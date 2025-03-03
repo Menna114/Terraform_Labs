@@ -1,0 +1,9 @@
+vpc_cider="10.1.0.0/16"
+public_subnet_cidr="10.1.2.0/24"
+private_subnet_cidr="10.1.1.0/24"
+env="prod"
+ami="ami-06ee6255945a96aba"
+instance_type="t2.micro"
+ssh_port=22
+app_port=3000
+region="eu-central-1"
