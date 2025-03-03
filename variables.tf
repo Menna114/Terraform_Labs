@@ -43,5 +43,23 @@ variable app_port {
 variable region {
   type        = string
 }
+variable new_count{
+  type        = number
+}
+variable subnets_list {
+  type        = list(object({
+    name = string ,
+    cidr = string ,
+    type = string ,
+    zone = string
+  }))
+}
 
+variable list_of_ec2s {
+  type        = list (object({
+    ec2_tier =string,
+    name =string,
+    ami =string
+  }))
+}
 
